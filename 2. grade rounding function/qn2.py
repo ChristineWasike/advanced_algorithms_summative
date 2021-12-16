@@ -2,6 +2,10 @@ import math
 
 
 def rounded_grading(grade):
+    # invalid grade
+    if not 0 <= grade <= 100:
+        return -1
+
     # base for multiples of 5
     base = 5
 
@@ -24,6 +28,7 @@ def rounded_grading(grade):
 
 
 if __name__ == '__main__':
-    print(rounded_grading(84))  # 85, 84
-    print(rounded_grading(29))  # 29, 29
-    print(rounded_grading(57))  # 57, 57
+    # New  # Old
+    print(rounded_grading(84))  # 85,  84
+    print(rounded_grading(29))  # 29,  29
+    print(rounded_grading(57))  # 57,  57
