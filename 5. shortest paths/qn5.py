@@ -16,7 +16,7 @@ def create_adjacency_list(edges):
     return graph
 
 
-def shortest_path(n_edges, edges, source):
+def shortestReach(n_edges, edges, source):
     # Creating adjacency list
     graph = create_adjacency_list(edges)
 
@@ -76,4 +76,4 @@ if __name__ == '__main__':
 
     for i in range(2, no_edges + 1):
         print(str(source_node) + "/S -> ", str(i), " - Shortest Path Value: ",
-              shortest_path(no_edges, edges, source_node)[i - 2])
+              shortestReach(no_edges, edges, source_node)[i - 2])
