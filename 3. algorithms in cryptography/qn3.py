@@ -1,14 +1,19 @@
 def encryption(message, key):
+    # array storing rows of encrypted message
     encryption_array = [''] * key
 
     for index in range(len(message)):
+        # adding letters from message to respective row/string
         encryption_array[index % key] += message[index]
 
+    # stores final encrypted string
     encrypted_message = ''
 
-    for letter in encryption_array:
-        encrypted_message += letter
+    for string in encryption_array:
+        # forming a single string from rows generated in encryption
+        encrypted_message += string
 
+    # final encrypted message
     return encrypted_message
 
 
